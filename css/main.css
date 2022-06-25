@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+    /*font-family: 'Fraunces', serif;
+      font-family: 'Montserrat', sans-serif;        MONSERRAT  500   700*/
+    /*font-family: 'Fraunces', serif;              FRAUNCES 700*/
+
+}
+
+
+:root{
+    --color-verde:hsl(158, 36%, 37%);
+    --color-blanco:hsl(30, 38%, 92%);
+
+    --color-azulMarino: hsl(212, 21%, 14%);
+    --color-lila: hsl(228, 12%, 48%);
+    --color-blancoOscuro: hsl(0, 0%, 89%);
+
+    --font-monserrat-500:500;
+    --font-monserrat-700:700;
+ 
+    --font-frauce-700:700;
+
+
+}
+
+
+html, body{
+    Font-size: 14px;
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    background: var(--color-blancoOscuro);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .container_box{
+    width: 550px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgb(209, 208, 208);
+}
+
+.container .container_box_image{
+    width: 50%;
+    height: 100%;
+    background-image: url(../images/image-product-desktop.jpg);
+    background-size: 100% 100%;
+}
+
+.container_box .container_box_section{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    background: var(--color-blanco);
+}
+.container_box_section_h3{
+    margin-top: 10px;
+    color:var(--color-lila);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+.container_box_section_h1{
+    margin-top: 20px;
+    font-size: 30px; 
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    color: var(--color-azulMarino);    
+}
+
+.container .container_box_section_parrafo{
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-lila);
+}
+
+
+/*DATE*/
+.container .date_number_box{
+    margin-top:20px;
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.container .date_number_box .date_number_box_date{
+    color: var(--color-verde);
+    font-size: 35px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.container .date_number_box .date_number_box_dateTT{
+    margin-right: 30px;
+    color: var(--color-lila);
+}
+
+/*BUTTON*/
+.container .container_box_section_button{
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px 0px;
+    background: var(--color-verde);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s all;
+}
+.container .container_box_section_button_left{
+    width: 20PX;
+    height: 20px;
+}
+.container .container_box_section_button_right{
+    margin-left: 10px;
+    color: var(--color-blanco);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+}
+.container_box_section_button:hover{
+    cursor: pointer;
+    background: rgb(4, 26, 4);
+}
+
+
+
+
+
+/***************************************************************************************/
+
+@media (min-width:320px) and (max-width:423px){
+    .container{
+        width: 100%;
+        max-width: 1440px;
+        padding: 60px 20px;
+        height: initial;
+        background: var(--color-blancoOscuro);
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .container_box{
+        width: 100%;
+        height: initial;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        border-radius: 0;
+        overflow: initial;
+        box-shadow: 0px 0px 20px rgb(209, 208, 208);
+    }
+
+        
+    .container .container_box_image{
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+        background-image: url(../images/image-product-mobile.jpg);
+        background-size: 100% 100%;
+        
+    }
+
+    .container_box .container_box_section{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        background: var(--color-blanco);
+    }
+    .container_box_section_h3{
+        margin-top: 10px;
+        color:var(--color-lila);
+        font-size: 14px;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        letter-spacing: 4px;
+    }
+    .container_box_section_h1{
+        margin-top: 20px;
+        font-size: 30px; 
+        font-weight: 700;
+        font-family: 'Fraunces', serif;
+        color: var(--color-azulMarino);    
+    }
+
+    .container .container_box_section_parrafo{
+        margin-top: 20px;
+        font-family: 'Montserrat', sans-serif;
+        color: var(--color-lila);
+    }
+
+
+    /*DATE*/
+    .container .date_number_box{
+        margin-top:20px;
+        width: 100%;
+        padding: 10px 0px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .container .date_number_box .date_number_box_date{
+        color: var(--color-verde);
+        font-size: 35px;
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+    }
+
+    .container .date_number_box .date_number_box_dateTT{
+        margin-right: 110px;
+        color: var(--color-lila);
+    }
+
+    /*BUTTON*/
+    .container .container_box_section_button{
+        margin-top: 20px;
+        width: 100%;
+        border-radius: 5px;
+        padding: 15px 0px;
+        background: var(--color-verde);
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s all;
+    }
+    .container .container_box_section_button_left{
+        width: 20PX;
+        height: 20px;
+    }
+    .container .container_box_section_button_right{
+        margin-left: 10px;
+        color: var(--color-blanco);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+
+    }
+    .container_box_section_button:hover{
+        cursor: pointer;
+        background: rgb(4, 26, 4);
+    }
+    
+}
